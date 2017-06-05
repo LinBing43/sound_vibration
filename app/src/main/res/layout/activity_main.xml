@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.linbing.blogfinal.MainActivity">
+
+    <Button
+    android:id="@+id/playmediaplayer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="-播放背景音乐-"/>
+    <Button
+        android:id="@+id/pausemediaplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="-暂停背景音乐-"/>
+    <Button
+        android:id="@+id/playsoundpool"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="-音效-"/>
+    <Button
+        android:id="@+id/pausesoundpool"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停音效"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:id="@+id/btn_GLT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义震动时长"/>
+        <Button
+            android:id="@+id/btn_SOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_GLT"
+            android:text="固定模式SOS"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_SOS"
+            android:text="停止震动"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
